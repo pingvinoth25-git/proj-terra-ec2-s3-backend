@@ -8,7 +8,7 @@ terraform {
   }
 
   backend "s3" {
-    bucket         = "aws-vinoth93-bucket-12345"   # Replace with your bucket name
+    bucket         = "aws-vinoth93-bucket-terraform"   # Replace with your bucket name
     key            = "terraform/terraform.tfstate"
     region         = "ap-south-1"
     dynamodb_table = "terraform-lock-table"
