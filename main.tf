@@ -7,13 +7,14 @@ terraform {
     }
   }
 
- # backend "s3" {
+  # backend "s3" {
   #   bucket         = "aws-vinoth93-bucket-terraform"
   #   key            = "terraform/terraform.tfstate"
   #   region         = "ap-south-1"
-  #   use_lockfile   = true
+  #   use_lockfile   = true      # use_lockfile replaces dynamodb_table
   # }
 }
+
 
 provider "aws" {
   region = var.region
