@@ -7,12 +7,12 @@ terraform {
     }
   }
 
-  backend "s3" {
-    bucket         = "aws-vinoth93-bucket-terraform"   # Replace with your bucket name
-    key            = "terraform/terraform.tfstate"
-    region         = "ap-south-1"
-    dynamodb_table = "terraform-lock-table"
-  }
+ # backend "s3" {
+  #   bucket         = "aws-vinoth93-bucket-terraform"
+  #   key            = "terraform/terraform.tfstate"
+  #   region         = "ap-south-1"
+  #   use_lockfile   = true
+  # }
 }
 
 provider "aws" {
