@@ -8,7 +8,7 @@ terraform {
   }
 
    backend "s3" {
-     bucket         = "aws-vinoth93-bucket-terraform"
+     bucket         = "aws-vinoth93-statefile-buc-terraform"
      key            = "terraform/terraform.tfstate"
      region         = "ap-south-1"
      use_lockfile   = true      # use_lockfile replaces dynamodb_table
